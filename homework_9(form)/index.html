@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lesson_8 Figma</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">About me</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Skills</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Portfolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="banner">
+                <h2 class="banner__title">Vasylenko Ivan</h2>
+                <img src="./img/img_author.jpg" alt="Photo Author" class="banner__img">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- ----------------form----------- -->
+        <section class="data">
+            <div class="wrapper">
+                <form action="#" method="GET" class="form first_form">
+                    <h3 class="form__title">Create an Account</h3>
+                    <div class="form__content">
+                        <div class="inpt_half inpt_first_name">
+                            <label for="first-name" class="label">First Name</label>
+                            <input type="text" id="first-name" class="inpt">
+                        </div>
+                        <div class="inpt_half">
+                            <label for="last-name" class="label">Last Name</label>
+                            <input type="text" id="last-name" class="inpt">
+                        </div>
+                        <div class="inpt_full">
+                            <label for="mail" class="label">E-mail</label>
+                            <input type="email" id="mail" class="inpt">
+                            <span>We'll never share your email with anyone else.</span>
+                        </div>
+                        <div class="inpt_radio">
+                            <input type="radio" name="gender" id="male" checked>
+                            <label for="male" class="gender">Male</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female" class="gender">Female</label>
+
+                        </div>
+                        <div class="inpt_half inpt_country">
+                            <label for="country" class="label">Country</label>
+                            <select name="country" id="country" class="select">
+                                <option value="" disabled="disables" selected="selected">Select</option>
+                                <option value="Ukr">Ukraine</option>
+                                <option value="Pol">Poland</option>
+                                <option value="Brit">Gr Britain</option>
+                                <option value="Ire">Ireland</option>
+                                <option value="Usa">USA</option>
+                                <option value="Aus">Austria</option>
+                            </select>
+                        </div>
+                        <div class="inpt_half">
+                            <label for="city" class="label">City</label>
+                            <input type="text" id="city" class="inpt">
+                        </div>
+                        <div class="btn">
+                            <input type="button" id="btn" value="Sign Up" class="button">
+                        </div>
+                        <div class="terms">
+                            <span>By clicking the 'Sign Up' button, you confirm that you accept our 
+                                <a href="#">Terms of Use </a> and  
+                                <a href="#">Privacy Policy</a>.</span>
+                        </div>
+                        <div class="log">
+                            <a href="#">Have an account?</a>
+                            <a href="#">Log In</a>
+                        </div>
+                    </div>
+                </form>
+                <form action="#" method="GET" class="form form_second">
+                    <h3 class="form__title">Profile</h3>
+                    <div class="photo_content">
+                        <img src="./img/avatar.svg" class="inl_block" alt="Avatar">
+                        <label class="upload_wrap inl_block">
+                            <input type="file" name="my_file">
+                            <div class="upload inl_block"><img src="./img/camera.svg" alt="camera"></div>
+                        </label>
+                        <button type="reset" class="reset inl_block"><img src="./img/reset.svg" alt="reset"></button>
+                        <span class="disp_block">Up to 1 MB (300x300 px)</span>
+                    </div>
+                    <div class="form__content">
+                        <div class="inpt_half inpt_first_name">
+                            <label for="first-name" class="label">Name</label>
+                            <input type="text" id="first-name" class="inpt">
+                        </div>
+                        <div class="inpt_half">
+                            <label for="mail" class="label">E-mail</label>
+                            <input type="email" id="mail" class="inpt">
+                        </div>
+                        <div class="inpt_half inpt_country">
+                            <label for="country" class="label">Country</label>
+                            <select name="country" id="country" class="select">
+                                <option value="" disabled="disables" selected="selected">Select</option>
+                                <option value="Ukr">Ukraine</option>
+                                <option value="Pol">Poland</option>
+                                <option value="Brit">Gr Britain</option>
+                                <option value="Ire">Ireland</option>
+                                <option value="Usa">USA</option>
+                                <option value="Aus">Austria</option>
+                            </select>
+                        </div>
+                        <div class="inpt_half">
+                            <label for="city" class="label">City</label>
+                            <input type="text" id="city" class="inpt">
+                        </div>
+                        <div class="inpt_half inpt_zip">
+                            <label for="zip" class="label">Zip Code</label>
+                            <input type="text" id="zip" class="inpt">
+                        </div>
+                        <div class="inpt_half">
+                            <label for="tel" class="label">Phone Number</label>
+                            <input type="tel" id="tel" class="inpt">
+                        </div>
+                        <div class="btn">
+                            <input type="button" id="btn" value="Update" class="button button_second">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- ----------------form----------- -->
+        <section class="about"></section>
+        <section class="skills"></section>
+        <section class="portfolio"></section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>

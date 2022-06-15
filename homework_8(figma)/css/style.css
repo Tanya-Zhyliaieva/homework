@@ -71,6 +71,9 @@ ul, ol{
     margin-bottom: 38px;
     
 }
+.banner__img{
+    width: 100%;
+}
 
 .about,
 .portfolio{
@@ -174,6 +177,7 @@ ul, ol{
     letter-spacing: 0.1em;
     border-radius: 35px;
     margin-bottom: 37px;  
+    cursor: pointer;
 }
 .container{
     width: 340px;
