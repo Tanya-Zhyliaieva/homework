@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+ul,
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.header{
+    padding: 17px 0;
+    margin-bottom: 70px;
+}
+.header_container{
+    font-size: 0;
+}
+.header_container > *{
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    
+}
+.logo{
+    margin-right: 199px;
+}
+.menu{
+    margin-right: 200px;
+}
+
+.list__item{
+    display: inline-block;
+}
+.list__item:not(:last-child){
+    margin-right: 20px;
+}
+.list__item__link{
+    color: #2F281E;
+    font-size: 16px;
+    font-weight: 400;
+}
+.list__item__link:hover{
+    color: #FF9900;
+}
+
+.button{
+    padding: 13px 25px;
+    background-color: #FF9900;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.button:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    color: #2F281E;
+    
+}
+.button__first{
+    margin-right: 32px;
+}
+
+.section__container__first{
+    background-image: url("../images/first_img.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.section__text{
+    max-width: 500px;
+    padding: 97px 0;
+    margin-bottom: 100px;
+}
+.section__container__first h1{
+    font-size: 44px;
+    font-weight: 700;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+.section__container__first p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #544837;
+    margin-bottom: 20px;
+}
+.style__button{
+    padding: 13px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+}
+.container__section__two{
+    text-align: center;
+}
+.container h2{
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2F281E;
+    margin-bottom: 50px;
+    
+}
+
+.section__card h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #2F281E;
+    margin-bottom: 16px;
+}
+
+.section__card p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #544837;
+}
+
+.section__card{
+    display: inline-block;
+    max-width: 270px;
+    width: calc(25% - 30px);
+    margin-bottom: 70px;
+    text-align: left;
+    
+}
+
+.section__card:not(:last-of-type){
+    margin-right: 40px;
+}
+
+.section__card img{
+    margin-bottom: 30px;
+}
