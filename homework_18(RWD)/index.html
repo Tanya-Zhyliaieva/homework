@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Homework RWD</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="Logo">
+            </div>
+            <div class="header__right">
+                <nav class="menu">
+                    <input type="checkbox" class="menu__burger" id="menu-burger">
+                    <label for="menu-burger" class="menu__burger-img">
+                        <span></span>
+                    </label>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">about</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">works</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <svg class="search__icon">
+                        <use xlink:href="./img/sprite/sprite.svg#search"></use>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section__top">
+            <div class="container">
+                <p class="section__top__title title">Manifest is a newborn theme.
+                    Clean, simple and fast.</p>
+            </div>
+        </section>
+        <section class="section__blog">
+            <div class="container">
+                <h1 class="section__blog__title title">Blog</h1>
+                <div class="blog ">
+                    <div class="blog__img">
+                        <img src="./img/image-arrow.jpg" alt="Arrow">
+                    </div>
+                    <div class="blog__info">
+                        <span class="blog__info__overhead">Technology, Interface Design</span>
+                        <h4 class="blog__info__title">Using UX Design to Build a Sustainable Future</h4>
+                        <span class="blog__info__date">6 May, 2020</span>
+                        <p class="blog__info__text text">Transformation has to be driven by everybody, not just by
+                            climate groups, and we have a
+                            responsibility to use our influence to drive this.
+                            <svg class="icon__arrow">
+                                <use xlink:href="./img/sprite/sprite.svg#arrow"></use>
+                            </svg>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="blog blog-reverse">
+                    <div class="blog__img">
+                        <img src="./img/blog-image.jpg" alt="Blog image">
+                    </div>
+                    <div class="blog__info">
+                        <span class="blog__info__overhead">Technology, Interface Design</span>
+                        <h4 class="blog__info__title">Using UX Design to Build a Sustainable Future</h4>
+                        <span class="blog__info__date">6 May, 2020</span>
+                        <p class="blog__info__text text">Transformation has to be driven by everybody, not just by
+                            climate groups, and we have a
+                            responsibility to use our influence to drive this.
+                            <svg class="icon__arrow">
+                                <use xlink:href="./img/sprite/sprite.svg#arrow"></use>
+                            </svg>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__posts">
+            <div class="container">
+                <div class="headline__box">
+                    <h3 class="headline__box__title">Latest Posts</h3>
+                    <a href="#" class="headline__box__all">View All
+                        <svg class="icon__arrow">
+                            <use xlink:href="./img/sprite/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="box__content">
+                    <div class="content">
+                        <div class="content__img">
+                            <img src="./img/light-image.jpg" alt="Image">
+                        </div>
+                        <div class="content__info">
+                            <div class="headline">
+                                <span class="headline__overhead">Interface Design</span>
+                                <span class="headline__date">8 June, 2020</span>
+                            </div>
+
+                            <h4 class="content__title">UX traffic light colours</h4>
+                            <p class="content__text text">UI has to make a huge visual difference between warning, an
+                                alert and a success.</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content__img">
+                            <img src="./img/image-posts2.jpg" alt="Image arrow">
+                        </div>
+                        <div class="content__info content__info-reverse">
+                            <div class="headline">
+                                <span class="headline__overhead">Technology</span>
+                                <span class="headline__date">6 May, 2020</span>
+                            </div>
+
+                            <h4 class="content__title">Using UX Design to Build a Sustainable Future</h4>
+                            <p class="content__text text">UI has to make a huge visual difference between warning, an
+                                alert
+                                and
+                                a success.</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content__img">
+                            <img src="./img/Image-post.jpg" alt="Image">
+                        </div>
+                        <div class="content__info">
+                            <div class="headline">
+                                <span class="headline__overhead">Visual Design</span>
+                                <span class="headline__date">8 June, 2020</span>
+                            </div>
+
+                            <h4 class="content__title">Creativity vs. UX</h4>
+                            <p class="content__text text">Is it possible to create a delightful user experience without
+                                following best UX practices?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__popular">
+            <div class="container">
+                <div class="headline__box">
+                    <h3 class="headline__box__title">The Most Popular</h3>
+                    <a href="#" class="headline__box__all">View All
+                        <svg class="icon__arrow">
+                            <use xlink:href="./img/sprite/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="box__content box__content__popular">
+                    <div class="content content__popular">
+                        <div class="content__img">
+                            <img src="./img/Image-popular1.jpg" alt="Image">
+                        </div>
+                        <div class="headline">
+                            <span class="headline__overhead">Interface Design</span>
+                            <span class="headline__date">8 June, 2020</span>
+                        </div>
+
+                        <h4 class="content__title title__popular">Mentorship Match — How a simple LinkedIn feature can
+                            boost diversity
+                        </h4>
+                        <p class="content__text text">LinkedIn is on a clear mission to make professionals more
+                            successful by connecting the global workforce and as we learned — diversity and success go
+                            hand in hand</p>
+                    </div>
+                    <div class="content content__popular">
+                        <div class="content__img">
+                            <img src="./img/Image-popular2.jpg" alt="Image arrow">
+                        </div>
+                        <div class="headline">
+                            <span class="headline__overhead">Visual Design</span>
+                            <span class="headline__date">8 June, 2020</span>
+                        </div>
+
+                        <h4 class="content__title title__popular">Creativity vs. UX</h4>
+                        <p class="content__text text">Is it possible to create a delightful user experience without
+                            following best UX practices?</p>
+                    </div>
+                </div>
+                <button class="btn" type="submit">Load More</button>
+                <div class="added">
+                    <div class="added__block">
+                        <a class="added__block__link" href="#">Full-time UI/UX designer<br>
+                            Head of Design at VeronaLabs.com<br>
+                            <svg class="icon__arrow">
+                                <use xlink:href="./img/sprite/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="added__block">
+                        <p class="added__block__text">We work with clients around the world from our headquarters in
+                            Charleston, South Carolina.
+                        </p>
+                        <p class="added__block__text">We focus on naming, branding, brand narratives, website design and
+                            development, and brand experiences.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="contacts">
+                    <h2 class="contacts__title title">Need a project?</h2>
+                    <span class="contacts__text">(239) 555-0108</span>
+                    <span class="contacts__text">tanya.hill@example.com</span>
+                </div>
+                <div class="socials">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" class="socials__link" target="_blank">
+                                <svg class="icon__social instagram">
+                                    <use xlink:href="./img/sprite/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" class="socials__link" target="_blank">
+                                <svg class="icon__social facebook">
+                                    <use xlink:href="./img/sprite/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" class="socials__link" target="_blank">
+                                <svg class="icon__social twitter">
+                                    <use xlink:href="./img/sprite/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.linkedin.com/" class="socials__link" target="_blank">
+                                <svg class="icon__social linkedin">
+                                    <use xlink:href="./img/sprite/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="copyright">© Copyright Manifest Theme. Allrights reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>

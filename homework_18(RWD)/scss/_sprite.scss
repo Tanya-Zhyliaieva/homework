@@ -1,0 +1,57 @@
+.icon__arrow {
+    height: 12px;
+    width: 23px;
+    margin-left: 10px;
+}
+
+
+.search__icon {
+    width: 17px;
+    height: 16px;
+}
+
+.socials{
+    &__list{
+        @include flexBox(flex, space-between, center);
+    
+    }
+
+    &__link{
+        @include flexBox(flex, center, center);
+        width: 50px;
+        height: 50px;
+        border: 1px solid #565656;
+
+        .instagram{
+            width: 24px;
+            height: 24px;
+        }
+
+        .facebook{
+            width: 13px;
+            height: 24px;
+        }
+
+        .twitter{
+            width: 30px;
+            height: 24px;
+        }
+
+        .linkedin{
+            width: 24px;
+            height: 24px;
+        }
+        .icon__social{
+            fill: #565656;
+        }
+    }
+
+    &__link:hover{
+        background-color: #565656;
+
+        .icon__social{
+            fill: #FFFFFF;
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+@mixin flexBox($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin fontSizeTitle(){
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+}
+
+@mixin paragraf(){
+    color: #565656;
+    letter-spacing: 0.05em;
+    line-height: 26px;
+}
+
+@mixin colorLetterSpacing(){
+    color: #7B7B7B;
+    letter-spacing: 0.1em;
+}
