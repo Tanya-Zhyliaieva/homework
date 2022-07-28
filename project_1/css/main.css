@@ -83,7 +83,7 @@ body {
 }
 
 .header {
-  padding: 24px 0;
+  padding: 10px 0;
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   position: absolute;
@@ -144,17 +144,17 @@ body {
   height: 2px;
   position: absolute;
   right: 20px;
-  background: #000;
+  background: #bbbbbb;
   vertical-align: middle;
 }
 .header .nav__burger-img::before, .header .nav__burger-img::after {
-  content: "";
-  position: absolute;
-  top: 9px;
   display: inline-block;
+  content: "";
   width: 100%;
   height: 2px;
-  background: #000;
+  position: absolute;
+  background: #bbbbbb;
+  top: 9px;
 }
 .header .nav__burger-img::after {
   top: -9px;
@@ -170,11 +170,13 @@ body {
   margin-left: 9px;
 }
 .header .nav__burger:checked ~ .nav__burger-img::before, .header .nav__burger:checked ~ .nav__burger-img::after {
+  display: inline-block;
   content: "";
-  position: absolute;
-  top: 0px;
   width: 100%;
   height: 3px;
+  position: absolute;
+  background: #bbbbbb;
+  top: 0px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -208,9 +210,7 @@ body {
             flex-direction: column;
     min-width: 320px;
     max-width: 50%;
-    -webkit-backdrop-filter: blur(9px);
-            backdrop-filter: blur(9px);
-    background-color: #fff;
+    background-color: #eef0f2;
     position: absolute;
     right: -100%;
     top: 0;
@@ -219,6 +219,13 @@ body {
 }
 .header .menu__item {
   padding: 15px 0;
+}
+@media screen and (max-width: 768px) {
+  .header .menu__item:not(:last-child) {
+    border-bottom: 1px solid #E4E4E4;
+    width: 100%;
+    text-align: center;
+  }
 }
 .header .menu__link {
   font-family: "Lato", sans-serif;
@@ -230,19 +237,18 @@ body {
 .header .menu__link::after {
   display: block;
   content: "";
-  position: absolute;
-  height: 3px;
   width: 44px;
-  bottom: 0px;
+  height: 3px;
+  position: absolute;
+  background: rgba(241, 137, 123, 0.0941176471);
+  bottom: 10px;
   left: -2px;
-  background-color: rgba(241, 137, 123, 0.0941176471);
 }
 @media screen and (max-width: 768px) {
   .header .menu__link::after {
     display: none;
   }
 }
-
 .main .font-title {
   font-family: "Playfair Display", sans-serif;
   font-weight: 400;
@@ -287,12 +293,12 @@ body {
 .main .btn::after {
   display: block;
   content: "";
-  position: absolute;
-  left: 11px;
-  top: 11px;
   width: 100%;
   height: 13px;
-  background-color: #F1897B;
+  position: absolute;
+  background: #F1897B;
+  left: 11px;
+  top: 11px;
   opacity: 0.3;
 }
 .main .btn:hover {
@@ -300,6 +306,15 @@ body {
 }
 .main .btn:hover::after {
   background-color: #E64F3A;
+}
+@media screen and (max-width: 576px) {
+  .main .btn {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 .main .section {
   margin-bottom: 120px;
@@ -316,7 +331,8 @@ body {
   background-position: top;
   padding: 250px 0 452px 0;
   padding-top: 250px;
-  margin-bottom: 530px;
+  margin-bottom: 560px;
+  position: relative;
 }
 @media (max-width: 1170px) {
   .main .section__banner {
@@ -350,9 +366,26 @@ body {
     margin-bottom: calc(30px + 20 * ((100vw - 320px) / 850));
   }
 }
+@media screen and (max-width: 576px) {
+  .main .section__banner .btn {
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+.main .section__banner::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  background: -o-linear-gradient(267deg, rgba(255, 255, 255, 0) 40.73%, #ffffff 70.21%);
+  background: linear-gradient(183deg, rgba(255, 255, 255, 0) 40.73%, #ffffff 70.21%);
+  left: 0;
+  bottom: -20px;
+}
 .main .section__info {
-  background: -o-linear-gradient(266.89deg, rgba(255, 255, 255, 0) 20.73%, #ffffff 45.21%);
-  background: linear-gradient(183.11deg, rgba(255, 255, 255, 0) 20.73%, #ffffff 45.21%);
   position: absolute;
   left: 0;
   top: 50%;
@@ -486,15 +519,15 @@ body {
 .main .section__info .info__right__item .info__title span::after {
   display: block;
   content: "";
+  width: 100px;
+  height: 1px;
   position: absolute;
+  background: #85BBB1;
   left: 50%;
   bottom: -50px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 100px;
-  height: 1px;
-  background-color: #85BBB1;
 }
 @media screen and (max-width: 768px) {
   .main .section__info .info__right__item .info__title span::after {
@@ -582,9 +615,9 @@ body {
   width: 100%;
   height: 1px;
   position: absolute;
+  background: #E4E4E4;
   top: -30px;
   left: 0;
-  background-color: #E4E4E4;
 }
 .main .section__quote .quote {
   background-image: url("../img/quote-background.jpg");
@@ -663,11 +696,12 @@ body {
 .main .section__video .video__border::before, .main .section__video .video__border::after {
   display: block;
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 7px;
   width: 13px;
   height: 13px;
+  position: absolute;
+  background: none;
+  top: 50%;
+  left: 7px;
   border: 1px solid #E4E4E4;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
@@ -739,15 +773,14 @@ body {
 }
 @media screen and (max-width: 576px) {
   .main .section__promises .promises__list {
-    position: relative;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto;
+    position: relative;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 }
 .main .section__promises .promises__item {
@@ -802,14 +835,14 @@ body {
   position: relative;
 }
 .main .section__promises .promises__btn span::after {
-  content: "";
   display: block;
-  position: absolute;
+  content: "";
   width: 100%;
   height: 13px;
+  position: absolute;
+  background: #F1897B;
   left: 8px;
   bottom: -2px;
-  background: #F1897B;
   opacity: 0.3;
 }
 .main .section__promises .promises__btn:hover {
@@ -874,12 +907,12 @@ body {
 .main .section__reviews .reviews__item::before {
   display: block;
   content: "";
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: absolute;
+  background: rgba(25, 28, 41, 0.6);
   top: 0;
   left: 0;
-  background: rgba(25, 28, 41, 0.6);
 }
 .main .section__reviews .reviews__text {
   position: relative;
