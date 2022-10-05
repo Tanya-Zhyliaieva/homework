@@ -1,0 +1,105 @@
+.slider {
+    position: relative;
+    margin: 0 auto;
+
+    .slick-slider {
+        margin: 0 -15px;
+    }
+    .slick-track {
+        display: flex;
+    }
+    .slick-slide {
+        margin-right: 15px;
+        margin-left: 15px;
+        height: auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 45%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        background-color: transparent;
+        font-size: 0;
+        cursor: pointer;
+        @media screen and (max-width: 400px) {
+            display: none !important;
+        }
+
+
+        &::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 50%;
+            border-left: 1px solid #fff;
+            border-top: 1px solid #fff;
+        }
+        @media screen and (max-width: 1400px) {
+            top: auto;
+            bottom: -12%;
+        }
+    }
+
+    .slick-prev {
+        left: -8%;
+        @media screen and (max-width: 1400px) {
+            left: 5%;
+        }
+        &::before {
+            left: 43%;
+            transform: translateY(-50%) rotateZ(315deg);
+        }
+    }
+
+    .slick-next {
+        right: -8%;
+        @media screen and (max-width: 1400px) {
+            right: 5%;
+        }
+        &::before {
+            right: 43%;
+            transform: translateY(-50%) rotateZ(130deg);
+        }
+    }
+
+    .slick-dots {
+        padding-left: 0;
+        list-style: none;
+        position: absolute;
+        bottom: -33%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+    
+            &.slick-active {
+                button {
+                    background-color: $color_light;
+                }
+            }
+        }
+    
+        button {
+            font-size: 0;
+            background: transparent;
+            border: 1px solid $color_light;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    
+}

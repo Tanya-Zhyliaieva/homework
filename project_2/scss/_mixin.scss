@@ -1,0 +1,42 @@
+@mixin flexBox($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font ($fontFamily, $fontSize, $fontWeight, $lineHeight, $color, $text-transform) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    color: $color;
+    text-transform: $text-transform;
+}
+
+@mixin adaptive-value($property, $startSize, $minSize) {
+    $addSize: $startSize - $minSize;
+    #{$property}: $startSize + px;
+
+    @media (max-width: #{$maxWidthContainer + px}) {
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+    }
+
+}
+
+@mixin pseudo-element ($content, $display, $width, $height, $position, $top, $left) {
+    content: $content;
+    display: $display;
+    width: $width;
+    height: $height;
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin position ($position, $width, $height, $top, $left){
+    position: $position;
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+}

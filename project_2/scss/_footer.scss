@@ -1,0 +1,149 @@
+.footer {
+    height: 550px;
+    background: bottom/cover url(../images/bg_footer-min.png), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+    position: relative;
+    color: $color_light;
+
+    @media screen and (max-width: 576px) {
+        height: auto;
+        padding: 50px 0;
+    }
+    &__container{
+        max-width: 770px;
+    }
+    #contact {
+        background: url('../img/bg_form-min.png') center bottom no-repeat;
+        background-color: $color_light;
+        color: #000;
+        @include position (absolute, 100%, 450px, -300px, 50%);
+        transform: translateX(-50%);
+        max-width: 770px;
+        padding: 90px 60px 30px;
+        z-index: 15;
+
+        @media screen and (max-width: 576px) {
+            min-height: 520px;
+        }
+
+        
+        .title_with_line {
+            @include adaptive-value(margin-bottom, 37, 6);
+        }
+        
+        .contact__wrap {
+            @include flexBox(flex, space-between, unset);
+            height: 201px;
+            @include adaptive-value(gap, 30, 10);
+            
+            @media screen and (max-width: 576px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        .contact__info {
+            @include flexBox(flex, space-between, unset);
+            flex-direction: column;
+            padding: 10px 0 4px;
+            
+            @media screen and (max-width: 576px) {
+                gap: 14px;
+            }
+            
+            li {
+                @include flexBox(flex, unset, center);
+                gap: 10px;
+            }
+        }
+        .contact__info svg {
+            fill: $color_bgc;
+            width: 15px;
+            height: 15px;
+        }
+        
+        form {
+            width: 310px;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 576px) {
+                min-width: 220px;
+                width: 100%;
+            }
+        }
+
+        input {
+            height: 46px;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $color_main;
+            margin-bottom: 28px;
+            font-size: 18px;
+
+            &::placeholder {
+                position: relative;
+                top: -2px;
+                left: 2px;
+                font-size: 18px;
+                color: #00000083;
+                vertical-align: top;
+            }
+
+            &:last-of-type {
+                margin-bottom: 30px;
+            }
+
+            &:focus {
+                border-bottom: 2px solid $color_main;
+                outline: none;
+            }
+        }
+
+        .btn {
+            width: 140px;
+            margin-left: auto;
+            font-size: 18px;
+
+            @media screen and (max-width: 576px) {
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+    .footer__wrap {
+        padding-top: 204px;
+        @include flexBox(flex, space-between, unset);
+        max-width: 770px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        .footer__logo {
+            img {
+                width: 240px;
+
+            }
+        }
+
+        .social {
+            @media screen and (max-width: 576px) {
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 6px;
+                width: auto;
+                min-width: 0;
+            }
+
+        }
+    }
+
+    .copyrights {
+        font-size: 14px;
+        @media screen and (max-width: 576px) {
+            position: relative;
+            top: -70px;
+            left: 0;
+        }
+    }
+
+}

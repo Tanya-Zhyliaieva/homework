@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/price_range_style.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/icons_font.css">
+    <link rel="stylesheet" href="./plugins/lightslider/css/lightslider.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="./img/logo_1.svg" alt="Logo" class="header__img">
+            </a>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Про нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link anchor">Екскурсії</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link anchor">Відгуки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link anchor">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="fullscreen">
+            <div class="container fullscreen__content">
+                <h2 class="fullscreen__overhead">подорожуй<sab class="fullscreen__sab">with</sab>
+                </h2>
+                <h1 class="fullscreen__title">PERO TRAVEL</h1>
+                <a href="#" class="fullscreen__btn btn">До екскурсій <i class="icon-arrow"></i>
+                </a>
+            </div>
+            <div class="cloud">
+                <img src="./img/cloud-01.png" alt="cloud" class="cloud1">
+                <img src="./img/cloud-02.png" alt="cloud" class="cloud2">
+                <img src="./img/cloud-03.png" alt="cloud" class="cloud3">
+            </div>
+        </section>
+        <section class="excursions">
+            <div class="container">
+                <div class="excursions__heading heading">
+                    <h3 class="heading__title title">Популярні екскурсії</h3>
+                    <a href="#" class="heading__link">Дивитись всі</a>
+                </div>
+                <ul class="excursions__list slider" id="lightSlider">
+                    <li class="excursions__item excursion">
+                        <img src="./img/item__forest.jpg" alt="forest" class="excursion__img">
+                        <span class="excursion__overhead">Автобусний тур</span>
+                        <h4 class="excursion__title">Обзорна екскурсiя</h4>
+                        <span class="excursion__time icon-clock-watch"> 6 год.</span>
+                        <span class="excursion__price icon-coins"> 400 грн</span>
+                        <p class="excursion__text">Відправлення в Микуличин – селище з 600-річною історією. Тут Ви
+                            дізнаєтеся про побут,
+                            обряди та традиції місцевого населення. А найяскравіші емоції Ви зазнаєте, коли сядете
+                            на гойдалку висотою із сосну. Саме в Микуличині знаходяться найвищі карпатські гойдалки.
+                            Емоції тут зашкалюють!
+                        </p>
+                        <a href="#" class="excursion__btn btn">Детальнiше</a>
+                    </li>
+                    <li class="excursions__item excursion">
+                        <img src="./img/item__waterfall.jpeg" alt="waterfall" class="excursion__img">
+                        <span class="excursion__overhead">Автобусний тур</span>
+                        <h4 class="excursion__title">Обзорна екскурсiя</h4>
+                        <span class="excursion__time icon-clock-watch"> 6 год.</span>
+                        <span class="excursion__price icon-coins"> 400 грн</span>
+                        <p class="excursion__text">Відправлення в Микуличин – селище з 600-річною історією. Тут Ви
+                            дізнаєтеся про побут,
+                            обряди та традиції місцевого населення. А найяскравіші емоції Ви зазнаєте, коли сядете
+                            на гойдалку висотою із сосну. Саме в Микуличині знаходяться найвищі карпатські гойдалки.
+                            Емоції тут зашкалюють!
+                        </p>
+                        <a href="#" class="excursion__btn btn">Детальнiше</a>
+                    </li>
+                    <li class="excursions__item excursion">
+                        <img src="./img/item__horse.jpg" alt="horse" class="excursion__img">
+                        <span class="excursion__overhead">Автобусний тур</span>
+                        <h4 class="excursion__title">Обзорна екскурсiя</h4>
+                        <span class="excursion__time icon-clock-watch"> 6 год.</span>
+                        <span class="excursion__price icon-coins"> 400 грн</span>
+                        <p class="excursion__text">Відправлення в Микуличин – селище з 600-річною історією. Тут Ви
+                            дізнаєтеся про побут,
+                            обряди та традиції місцевого населення. А найяскравіші емоції Ви зазнаєте, коли сядете
+                            на гойдалку висотою із сосну. Саме в Микуличині знаходяться найвищі карпатські гойдалки.
+                            Емоції тут зашкалюють!
+                        </p>
+                        <a href="#" class="excursion__btn btn">Детальнiше</a>
+                    </li>
+                    <li class="excursions__item excursion">
+                        <img src="./img/item__horse.jpg" alt="horse" class="excursion__img">
+                        <span class="excursion__overhead">Автобусний тур</span>
+                        <h4 class="excursion__title">Обзорна екскурсiя</h4>
+                        <span class="excursion__time icon-clock-watch"> 6 год.</span>
+                        <span class="excursion__price icon-coins"> 400 грн</span>
+                        <p class="excursion__text">Відправлення в Микуличин – селище з 600-річною історією. Тут Ви
+                            дізнаєтеся про побут,
+                            обряди та традиції місцевого населення. А найяскравіші емоції Ви зазнаєте, коли сядете
+                            на гойдалку висотою із сосну. Саме в Микуличині знаходяться найвищі карпатські гойдалки.
+                            Емоції тут зашкалюють!
+                        </p>
+                        <a href="#" class="excursion__btn btn">Детальнiше</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__picture">
+                    <img src="./img/bg_about-us.jpeg" alt="Mountais">
+                </div>
+                <div class="info">
+                    <h3 class="info__title title">Про нас</h3>
+                    <p class="info__text">PeroTravel - Перший онлайн-сервіс з бронювання екскурсій без черг та
+                        операторів.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. </p>
+                    <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="tours">
+            <div class="container">
+                <h3 class="tours__title title">Види екскурсій</h3>
+                <ul class="tours__list tour">
+                    <li class="tour__item">
+                        <i class="tour__icon icon-bus"></i>
+                        <div class="tour__info">
+                            <h4 class="tour__title">Автобусний тур</h4>
+                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                                laboriosam architecto
+                                debitis tempore minima ratione quos dolor in? Dicta soluta et doloremque, sapiente quod
+                                perspiciatis quam sequi labore fuga ex cumque atque nulla aliquid ipsam alias doloribus
+                                eum
+                                aperiam molestiae, officia corporis pariatur perferendis. Praesentium quo dolorum odio
+                                eveniet enim.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="tour__item">
+                        <i class="tour__icon icon-kayak"></i>
+                        <div class="tour__info">
+                            <h4 class="tour__title">Рафтинг</h4>
+                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                                laboriosam architecto
+                                debitis tempore minima ratione quos dolor in? Dicta soluta et doloremque, sapiente quod
+                                perspiciatis quam sequi labore fuga ex cumque atque nulla aliquid ipsam alias doloribus
+                                eum
+                                aperiam molestiae, officia corporis pariatur perferendis. Praesentium quo dolorum odio
+                                eveniet enim.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="tour__item">
+                        <i class="tour__icon icon-quad-bike"></i>
+                        <div class="tour__info">
+                            <h4 class="tour__title">Активний відпочинок</h4>
+                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                                laboriosam architecto
+                                debitis tempore minima ratione quos dolor in? Dicta soluta et doloremque, sapiente quod
+                                perspiciatis quam sequi labore fuga ex cumque atque nulla aliquid ipsam alias doloribus
+                                eum
+                                aperiam molestiae, officia corporis pariatur perferendis. Praesentium quo dolorum odio
+                                eveniet enim.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="tour__item">
+                        <i class="tour__icon icon-snowflake"></i>
+                        <div class="tour__info">
+                            <h4 class="tour__title">Зимові розваги</h4>
+                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                                laboriosam architecto
+                                debitis tempore minima ratione quos dolor in? Dicta soluta et doloremque, sapiente quod
+                                perspiciatis quam sequi labore fuga ex cumque atque nulla aliquid ipsam alias doloribus
+                                eum
+                                aperiam molestiae, officia corporis pariatur perferendis. Praesentium quo dolorum odio
+                                eveniet enim.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tours__bottom">
+                    <p class="tours__description"> Обирайте на нашому сайті екскурсію, яка підходить саме вам та
+                        записуйтесь
+                        онлайн без черг, просто
+                        та швидко!</p>
+                    <a href="#" class="tours__btn btn">До екскурсій <i class="icon-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="excursions__heading heading container">
+                <h3 class="heading__title title">Галерея</h3>
+                <a href="#" class="heading__link">Дивитись всі</a>
+            </div>
+            <div class="light__gallery" id="light__gallery">
+                <a href="./img/fortetca.jpg" class="light__gallery-1">
+                    <img src="./img/fortetca.jpg" alt="gallery">
+                </a>
+                <a href="./img/radodendrom.jpg" class="light__gallery-2">
+                    <img src="./img/radodendrom.jpg" alt="gallery">
+                </a>
+                <a href="./img/pip-ivan.jpg" class="light__gallery-3">
+                    <img src="./img/pip-ivan.jpg" alt="gallery">
+                </a>
+                <a href="./img/gora.jpg" class="light__gallery-4">
+                    <img src="./img/gora.jpg" alt="gallery">
+                </a>
+                <a href="./img/horses_club.jpg" class="light__gallery-5">
+                    <img src="./img/horses_club.jpg" alt="gallery">
+                </a>
+                <a href="./img/shipot.webp" class="light__gallery-6">
+                    <img src="./img/shipot.webp" alt="gallery">
+                </a>
+                <a href="./img/sky.jpg" class="light__gallery-7">
+                    <img src="./img/sky.jpg" alt="gallery">
+                </a>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__heading heading container">
+                <h3 class="heading__title title">Відгуки</h3>
+                <a href="#" class="heading__link">Дивитись всі</a>
+            </div>
+            <ul class="reviews__list slider">
+                <li class="reviews__item">
+                    <img src="./img/review-1.jpg" alt="Max" class="reviews__photo">
+                    <div class="reviews__info">
+                        <span class="reviews__author">Макс Трофименко, 27 р.</span>
+                        <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repudiandae suscipit doloremque
+                            tenetur, corrupti omnis earum eius cupiditate, a tempora eum saepe. Pariatur sint, qui
+                            necessitatibus saepe quidem nobis illo id, sit impedit aperiam voluptates veniam consequuntur.
+                        </p>
+                        <span class="reviews__data">23.09.2021</span>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <img src="./img/review-2.jpg" alt="Mykyta" class="reviews__photo">
+                    <div class="reviews__info">
+                        <span class="reviews__author">Микита Плющ, 30 р.</span>
+                        <p class="reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores reprehenderit veniam ea
+                            porro repellat magni esse a eaque. Perspiciatis nostrum, voluptas nobis nesciunt commodi eaque
+                            adipisci recusandae temporibus eligendi doloremque dolore aperiam fugit quasi praesentium sequi
+                            vero laborum, reprehenderit laudantium ducimus ea suscipit exercitationem.
+                        </p>
+                        <span class="reviews__data">02.07.2020</span>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <img src="./img/review-3.jpg" alt="Vova" class="reviews__photo">
+                    <div class="reviews__info">
+                        <span class="reviews__author">Володимир Зеленський, 44 р.</span>
+                        <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis labore quos iure, a ad rem
+                            aperiam soluta omnis quidem iste! Soluta eligendi debitis fugit et tempore quasi, harum dolore
+                            rerum esse explicabo quidem quas aperiam quis aliquid voluptatem similique voluptas? Ad, optio
+                            nulla. Exercitationem, perferendis debitis odio ipsa earum inventore.
+                        </p>
+                        <span class="reviews__data">03.01.2020</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <div class="container">
+            <!-- <div class="filter">
+    
+                <div class="form">
+                    <div class="filters-item">
+                        <div class="filter-name">кол-ва людей</div>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input id="person1" type="radio" name="person">
+                                <label for="person1">1 человека</label>
+                            </div>
+                            <div class="filter-option">
+                                <input id="person2" type="radio" name="person">
+                                <label for="person2">2 человека</label>
+                            </div>
+                            <div class="filter-option">
+                                <input id="person3" type="radio" name="person">
+                                <label for="person3">2 человека</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters-item">
+                        <div class="filter-name">кол-ва блядей</div>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input id="blyad1" type="radio" name="blyad">
+                                <label for="blyad1">1 блядь</label>
+                            </div>
+                            <div class="filter-option">
+                                <input id="blyad2" type="radio" name="blyad">
+                                <label for="blyad2">2 бляди</label>
+                            </div>
+                            <div class="filter-option">
+                                <input id="blyad3" type="radio" name="blyad">
+                                <label for="blyad3">2 бляди</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="slider-range" class="price-filter-range" name="rangeInput">
+                    <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price"
+                        class="price-range-field" />
+    
+                    <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price"
+                        class="price-range-field" />
+                </div>
+    
+            </div> -->
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./plugins/lightslider/js/lightslider.min.js"></script>
+    <script src="./js/light_slider.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/price_range_script.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

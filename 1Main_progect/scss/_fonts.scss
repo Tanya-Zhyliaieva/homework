@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Montserrat-Medium";
+    src:local("Montserrat Medium"),
+    url("../fonts/AnyConv.com__Montserrat-Medium.woff2") format("woff2"),
+        url("../fonts/Montserrat-500.woff") format("woff"),
+        url("../fonts/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/AnyConv.com__Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-700.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("../fonts/AnyConv.com__Montserrat-Black.woff2") format("woff2"),
+    url("../fonts/Montserrat-900.woff") format("woff"),
+    url("../fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kindly-Jasmine";
+    src: url("../fonts/Kindly_Jasmine.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}

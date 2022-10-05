@@ -1,0 +1,62 @@
+.header {
+    @include position (absolute, 100%, 107px, 0, 0);
+    @include flexBox(flex, center, flex-end);
+    z-index: 100;
+    transition: all .5s linear;
+
+    .header__logo {
+        flex-shrink: 0;
+    }
+
+    &__social {
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+}
+.header__block {
+    @include flexBox(flex, space-between, center);
+    gap: 40px;
+
+    .menu {
+        width: 100%;
+        flex: 0 1 515px;
+        @include font ($font_menu, 14px, 400, 18px, inherit, unset);
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        &__list {
+            @include flexBox(flex, space-between, center);
+        }
+
+        &__item {
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                @include pseudo-element ('', block, 9px, 9px, absolute, 50%, 0);
+                border-radius: 50%;
+                border: 1px solid $color_light;
+                transform: translateY(-50%);
+            }
+            
+            &:hover::before {
+                background-color: $color_light;
+            }
+        }
+
+        &__link {
+            color: $color_light;
+        }
+    }
+
+}
+
+.header.fixed_nav {
+    background: linear-gradient(243.43deg, #7e5affd0 16.9%, #55b8ffc0 83.27%);
+    backdrop-filter: blur(20px);
+    @include position (fixed, 100%, 60px, 0, 0);
+    box-shadow: 0px .5px 10px #2e193b8f;
+}

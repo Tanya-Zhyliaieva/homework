@@ -1,0 +1,117 @@
+[
+    {    
+        "place": "Vorohta",
+        "price": "250",
+        "person": "5",
+        "duration": "3",
+        "rest": "rafting"
+    },
+    {    
+        "place": "Lviv",
+        "price": "500",
+        "person": "10",
+        "duration": "6",
+        "rest": "bus"
+    },
+    {    
+        "place": "Odessa",
+        "price": "2500",
+        "person": "6",
+        "duration": "6",
+        "rest": "see"
+    },
+    {    
+        "place": "Kiyv",
+        "price": "500",
+        "person": "2",
+        "duration": "8",
+        "rest": "bus"
+    },
+    {    
+        "place": "Vorohta",
+        "price": "300",
+        "person": "2",
+        "duration": "2",
+        "rest": "fishing"
+    },
+    {    
+        "place": "Vorohta",
+        "price": "400",
+        "person": "2",
+        "duration": "8",
+        "rest": "pohod"
+    },
+    {    
+        "place": "Odessa",
+        "price": "25000",
+        "person": "10",
+        "duration": "48",
+        "rest": "rafting"
+    },
+    {    
+        "place": "Kyiv",
+        "price": "1000",
+        "person": "1",
+        "duration": "1",
+        "rest": "polet na samolete"
+    },
+    {    
+        "place": "Lviv",
+        "price": "250",
+        "person": "1",
+        "duration": "2",
+        "rest": "museum"
+    },
+    {    
+        "place": "Lviv",
+        "price": "600",
+        "person": "2",
+        "duration": "3",
+        "rest": "teatr"
+    },
+    {    
+        "place": "Odessa",
+        "price": "500",
+        "person": "1",
+        "duration": "4",
+        "rest": "opera"
+    },
+    {    
+        "place": "Odessa",
+        "price": "2500",
+        "person": "2",
+        "duration": "8",
+        "rest": "akvapark"
+    },
+    {    
+        "place": "Lviv",
+        "price": "600",
+        "person": "6",
+        "duration": "3",
+        "rest": "teatr"
+    }
+    ,
+    {    
+        "place": "Lviv",
+        "price": "600",
+        "person": "10",
+        "duration": "6",
+        "rest": "bus"
+    }
+    ,
+    {    
+        "place": "Lviv",
+        "price": "700",
+        "person": "10",
+        "duration": "6",
+        "rest": "bus"
+    }
+    ,
+    {    
+        "place": "Lviv",
+        "price": "800",
+        "person": "10",
+        "duration": "6",
+        "rest": "bus"
+    }
+]
