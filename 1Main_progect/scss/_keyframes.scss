@@ -31,3 +31,13 @@
     }
 }
 
+@keyframes bg-animation {
+    0% {
+        background-size: 120%;
+        background-position: 50% 60%;
+    }  
+    100% {
+        background-size: 100%;
+        background-position: 30% 20%
+    }
+}

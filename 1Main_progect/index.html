@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/price_range_style.css">
     <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./plugins/lightGallery/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="./css/icons_font.css">
     <link rel="stylesheet" href="./plugins/lightslider/css/lightslider.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -58,7 +59,7 @@
                     <h3 class="heading__title title">Популярні екскурсії</h3>
                     <a href="#" class="heading__link">Дивитись всі</a>
                 </div>
-                <ul class="excursions__list slider" id="lightSlider">
+                <ul class="excursions__list slider-js" id="lightSlider">
                     <li class="excursions__item excursion">
                         <img src="./img/item__forest.jpg" alt="forest" class="excursion__img">
                         <span class="excursion__overhead">Автобусний тур</span>
@@ -75,6 +76,48 @@
                     </li>
                     <li class="excursions__item excursion">
                         <img src="./img/item__waterfall.jpeg" alt="waterfall" class="excursion__img">
+                        <span class="excursion__overhead">Автобусний тур</span>
+                        <h4 class="excursion__title">Обзорна екскурсiя</h4>
+                        <span class="excursion__time icon-clock-watch"> 6 год.</span>
+                        <span class="excursion__price icon-coins"> 400 грн</span>
+                        <p class="excursion__text">Відправлення в Микуличин – селище з 600-річною історією. Тут Ви
+                            дізнаєтеся про побут,
+                            обряди та традиції місцевого населення. А найяскравіші емоції Ви зазнаєте, коли сядете
+                            на гойдалку висотою із сосну. Саме в Микуличині знаходяться найвищі карпатські гойдалки.
+                            Емоції тут зашкалюють!
+                        </p>
+                        <a href="#" class="excursion__btn btn">Детальнiше</a>
+                    </li>
+                    <li class="excursions__item excursion">
+                        <img src="./img/item__horse.jpg" alt="horse" class="excursion__img">
+                        <span class="excursion__overhead">Автобусний тур</span>
+                        <h4 class="excursion__title">Обзорна екскурсiя</h4>
+                        <span class="excursion__time icon-clock-watch"> 6 год.</span>
+                        <span class="excursion__price icon-coins"> 400 грн</span>
+                        <p class="excursion__text">Відправлення в Микуличин – селище з 600-річною історією. Тут Ви
+                            дізнаєтеся про побут,
+                            обряди та традиції місцевого населення. А найяскравіші емоції Ви зазнаєте, коли сядете
+                            на гойдалку висотою із сосну. Саме в Микуличині знаходяться найвищі карпатські гойдалки.
+                            Емоції тут зашкалюють!
+                        </p>
+                        <a href="#" class="excursion__btn btn">Детальнiше</a>
+                    </li>
+                    <li class="excursions__item excursion">
+                        <img src="./img/item__horse.jpg" alt="horse" class="excursion__img">
+                        <span class="excursion__overhead">Автобусний тур</span>
+                        <h4 class="excursion__title">Обзорна екскурсiя</h4>
+                        <span class="excursion__time icon-clock-watch"> 6 год.</span>
+                        <span class="excursion__price icon-coins"> 400 грн</span>
+                        <p class="excursion__text">Відправлення в Микуличин – селище з 600-річною історією. Тут Ви
+                            дізнаєтеся про побут,
+                            обряди та традиції місцевого населення. А найяскравіші емоції Ви зазнаєте, коли сядете
+                            на гойдалку висотою із сосну. Саме в Микуличині знаходяться найвищі карпатські гойдалки.
+                            Емоції тут зашкалюють!
+                        </p>
+                        <a href="#" class="excursion__btn btn">Детальнiше</a>
+                    </li>
+                    <li class="excursions__item excursion">
+                        <img src="./img/item__horse.jpg" alt="horse" class="excursion__img">
                         <span class="excursion__overhead">Автобусний тур</span>
                         <h4 class="excursion__title">Обзорна екскурсiя</h4>
                         <span class="excursion__time icon-clock-watch"> 6 год.</span>
@@ -244,7 +287,7 @@
                 <h3 class="heading__title title">Відгуки</h3>
                 <a href="#" class="heading__link">Дивитись всі</a>
             </div>
-            <ul class="reviews__list slider">
+            <ul class="reviews__list reviews__slider">
                 <li class="reviews__item">
                     <img src="./img/review-1.jpg" alt="Max" class="reviews__photo">
                     <div class="reviews__info">
@@ -262,8 +305,8 @@
                         <span class="reviews__author">Микита Плющ, 30 р.</span>
                         <p class="reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores reprehenderit veniam ea
                             porro repellat magni esse a eaque. Perspiciatis nostrum, voluptas nobis nesciunt commodi eaque
-                            adipisci recusandae temporibus eligendi doloremque dolore aperiam fugit quasi praesentium sequi
-                            vero laborum, reprehenderit laudantium ducimus ea suscipit exercitationem.
+                            adipisci doloremque dolore aperiam fugit quasi praesentium sequi
+                            exercitationem.
                         </p>
                         <span class="reviews__data">02.07.2020</span>
                     </div>
@@ -274,72 +317,74 @@
                         <span class="reviews__author">Володимир Зеленський, 44 р.</span>
                         <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis labore quos iure, a ad rem
                             aperiam soluta omnis quidem iste! Soluta eligendi debitis fugit et tempore quasi, harum dolore
-                            rerum esse explicabo quidem quas aperiam quis aliquid voluptatem similique voluptas? Ad, optio
-                            nulla. Exercitationem, perferendis debitis odio ipsa earum inventore.
+                            rerum esse explicabo  debitis odio ipsa earum inventore.
                         </p>
                         <span class="reviews__data">03.01.2020</span>
                     </div>
                 </li>
             </ul>
         </section>
+        <section class="contact">
+            <div class="contact__request request container">
+                <h3 class="request__title">Залишились питання?</h3>
+                <span class="request__subtitle">Залиш заявку і ми відповімо</span>
+                <form action="#" class="request__form">
+                    <input type="text" placeholder="Ім'я">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="Пошта">
+                    <button type="submit" class="request__btn btn">Залишити заявку</button>
+                </form>
+            </div>
+        </section>
+
         <div class="container">
-            <!-- <div class="filter">
-    
-                <div class="form">
-                    <div class="filters-item">
-                        <div class="filter-name">кол-ва людей</div>
-                        <div class="filter-options">
-                            <div class="filter-option">
-                                <input id="person1" type="radio" name="person">
-                                <label for="person1">1 человека</label>
-                            </div>
-                            <div class="filter-option">
-                                <input id="person2" type="radio" name="person">
-                                <label for="person2">2 человека</label>
-                            </div>
-                            <div class="filter-option">
-                                <input id="person3" type="radio" name="person">
-                                <label for="person3">2 человека</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filters-item">
-                        <div class="filter-name">кол-ва блядей</div>
-                        <div class="filter-options">
-                            <div class="filter-option">
-                                <input id="blyad1" type="radio" name="blyad">
-                                <label for="blyad1">1 блядь</label>
-                            </div>
-                            <div class="filter-option">
-                                <input id="blyad2" type="radio" name="blyad">
-                                <label for="blyad2">2 бляди</label>
-                            </div>
-                            <div class="filter-option">
-                                <input id="blyad3" type="radio" name="blyad">
-                                <label for="blyad3">2 бляди</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slider-range" class="price-filter-range" name="rangeInput">
-                    <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price"
-                        class="price-range-field" />
-    
-                    <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price"
-                        class="price-range-field" />
-                </div>
-    
-            </div> -->
+
         </div>
     </main>
     <footer class="footer">
-
+        <div class="footer__container container">
+            <a href="#" class="footer__logo">
+                <img src="./img/logo_2.svg" alt="Logo" class="header__img">
+            </a>
+            <nav class="footer__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Про нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link anchor">Екскурсії</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link anchor">Відгуки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link anchor">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__contact">
+                <span class="footer__number"><i class="icon-viber"></i> +38 067 777 77 77</span>
+                <span class="footer__number"><i class="icon-telegram"></i> +38 067 777 77 77</span>
+                <span class="footer__number"><i class="icon-telegram"></i> Телеграм-бот PeroTravel</span>
+            </div>
+            <div class="footer__social">
+                <p class="social__mail"><i class="icon-mail"></i> office@perotravel.ua</p>
+                <a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i> </a>
+                <a href="https://www.instagram.com" target="_blank"> <i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+            </div>
+        </div>
     </footer>
+
 
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./plugins/lightslider/js/lightslider.min.js"></script>
     <script src="./js/light_slider.js"></script>
+    <script src="./plugins/lightGallery/lightgallery.min.js"></script>
+    <script src="./plugins/lightGallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="./plugins/lightGallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="./js/light_gallery.js"></script>
     <script src="./js/jquery-ui.js"></script>
     <script src="./js/price_range_script.js"></script>
     <script src="./js/main.js"></script>

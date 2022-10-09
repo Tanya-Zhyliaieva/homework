@@ -1,0 +1,47 @@
+// content: "";
+// display: block;
+// width: 7px;
+// height: 7px;
+// position: absolute;
+// top: 48%;
+// left: 50%;
+// -webkit-transform: translate(-50%, -50%) rotateZ(225deg);
+// -ms-transform: translate(-50%, -50%) rotate(225deg);
+// transform: translate(-50%, -50%) rotateZ(225deg);
+// border-left: 1px solid #fff;
+// border-top: 1px solid #fff;
+
+.lSAction>a {
+    background-image: none;
+    width: 40px;
+    height: 40px;
+    top: 48%;
+    left: 50%;
+    opacity: 0.7;
+    // -webkit-transform: translate(-50%, -50%) rotateZ(225deg);
+    // -ms-transform: translate(-50%, -50%) rotate(225deg);
+    transform: translate(-50%, -50%) rotateZ(315deg);
+    border-left: 3px solid $color_titles;
+    border-top: 3px solid $color_titles;
+}
+.lSSlideOuter .lSPager.lSpg>li a {
+    background-color: $bgc_block;
+    border-radius: 0;
+    display: inline-block;
+    height: 3px;
+    overflow: hidden;
+    text-indent: 0;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+    -webkit-transition: all .5s linear 0s;
+    transition: all .5s linear 0s;
+}
+
+.lSSlideOuter .lSPager.lSpg>li.active a, 
+.lSSlideOuter .lSPager.lSpg>li:hover a{
+    background-color: $color_titles;
+}
+.lSSlideOuter .lSPager.lSpg>li{
+    padding: 0;
+}

@@ -28,28 +28,34 @@
 
 .icon-facebook:before {
   content: "\e900";
+  font-size: 26px;
 }
 .icon-viber:before {
   content: "\e902";
+  font-size: 24px;
 }
 .icon-arrow:before {
   content: "\e903";
+  font-size: 20px;
 }
 .icon-clock-watch:before {
   content: "\e904";
 }
 .icon-coins:before {
   content: "\e906";
-  font-size: 20px;
+  font-size: 22px;
 }
 .icon-instagram:before {
   content: "\e90a";
+  font-size: 22px;
 }
 .icon-mail:before {
   content: "\e90b";
+  font-size: 22px;
 }
 .icon-telegram:before {
   content: "\e90d";
+  font-size: 26px;
 }
 .icon-bus:before {
   content: "\e901";
@@ -72,4 +78,6 @@
 }
 .icon-twitter:before {
   content: "\e90c";
+  font-size: 24px;
+  font-weight: 700;
 }

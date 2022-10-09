@@ -4,6 +4,7 @@
 @import 'keyframes';
 
 
+
 * {
     padding: 0;
     margin: 0;
@@ -96,7 +97,6 @@ body {
 
             &:hover {
                 color: $color_elements;
-                opacity: 0.8;
             }
         }
     }
@@ -167,6 +167,7 @@ body {
 
     .excursions__list {
         @include flexBox(flex, space-between, center);
+        margin-bottom: 40px;
 
         .excursion { 
             font-size: 14px;
@@ -208,8 +209,7 @@ body {
                 @include hideText (8);
                 margin-bottom: 20px;
             }
-            &__btn{
-            }
+
         }
     }
 
@@ -291,8 +291,7 @@ body {
         margin: 0 auto;
         margin-bottom: 20px;
     }
-    &__btn{
-    }
+
 }
 .gallery{
     margin-bottom: 150px;
@@ -303,7 +302,7 @@ body {
         grid-template-rows: 1fr 1fr;
         overflow: hidden;
         padding: 0 10px;
-        gap: 10px;
+        column-gap: 10px;
         
         &-1{
             grid-column: 1/3;
@@ -333,6 +332,7 @@ body {
     a {
         display: block;
         position: relative;
+        margin-bottom: 10px;
         img{
             width: 100%;
             height: 100%;
@@ -370,7 +370,6 @@ body {
     margin-bottom: 200px;
     &__list{
         display: flex;
-        // flex-wrap: wrap;
         gap: 20px;
     }
     &__item{
@@ -394,7 +393,87 @@ body {
         font-family: $font_main;
     }
 }
-// --------------- Main --------------------
+.contact{
+    width: 100%;
+    min-height: 640px;
+    background: url("../img/footer.jpg") center/cover;
+    position: relative;
+    &__request{
+        transform: translateX(50%);
+    }
+    .request{
+        display: flex;
+        flex-direction: column;
+        max-width: 560px;
+        height: 100%;
+        padding: 140px 100px;
+        backdrop-filter: blur(10px);
+        
+        &__title{
+            @include font ($font_main, 24px, 700, 34px, $color_light, none);
+        }
+        &__subtitle{
+            @include font ($font_menu, 14px, 500, 17px, $color_elements, none);
+            display: block;
+            margin-bottom: 40px;
+        }
+        input {
+            height: 30px;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $bgc_block;
+            margin-bottom: 45px;
+            font-size: 16px;
+            color: $color_light;
+            background-color: transparent;
+
+            &::placeholder {
+                position: relative;
+                top: -2px;
+                left: 2px;
+                font-size: 14px;
+                color: $bgc_block;
+                vertical-align: top;
+            }
+
+            &:last-of-type {
+                margin-bottom: 80px;
+            }
+
+            &:focus {
+                border-bottom: 2px solid $color_light;
+                outline: none;
+            }
+        }
+
+    }
+}
+
+.footer{
+    background-color: $bgc_block;
+    &__container{
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu__item{
+        margin-bottom: 12px;
+    }
+    &__number{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .social__mail{
+        margin-bottom: 20px;
+    }
+}
+
+
+// --------------- page 2 --------------------
+
+
+
 .filters-item {
     margin-bottom: 20px;
 
@@ -424,6 +503,102 @@ body {
         input:checked~label {
             background-color: blue;
             color: #fff;
+        }
+    }
+}
+
+// -----------------------------------------------------
+.top{
+    @include flexBox(flex, center, center);
+    width: 100%;
+    min-height: 50vh;
+    background: url('../img/bgc_page2.jpg') 20% 20%/cover;
+    margin-bottom: 100px;
+    &__title{
+        @include font ($font_main, 72px, 700, 88px, $color_light, uppercase);
+        margin-top: 12%;
+
+    }
+}
+
+.main__container{
+    display: flex;
+
+}
+.sidebar{
+    height: 100vh;
+    width: 25%;
+    margin-right: 3%;
+    background-color: $color_light;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px #0000000d;
+    overflow: hidden;
+    padding: 25px 35px;
+
+    &__title{
+        @include font ($font_main, 16px, 700, 17px, $color_titles, none); 
+    }
+}
+.tours_2{
+    height: 100vh;
+    width: 72%;
+
+    &__title{
+        margin-bottom: 40px;
+    }
+}
+@import 'light_slider';
+
+.main_2{
+    background-color: $bgc_page_2;
+}
+.top {
+    animation: bg-animation 10s ease-in-out;
+    background-image: url('../img/bgc_page2.jpg'); 
+    background-repeat: no-repeat;
+    $color_light: #337AB7;
+}
+ 
+.tours_2{
+    .card{
+        display: flex;
+        background-color: $color_light;
+        border-radius: 10px;
+        box-shadow: 0px 0px 40px #0000000d;
+        overflow: hidden;
+
+        &__img{
+            width: 26%;
+            margin-right: 4%;
+        }
+        &__info{
+            width: 70%;
+            padding: 20px 30px 20px 0;
+        }
+        &__overhead{
+            @include font ($font_menu, 14px, 500, 25px, $color_elements, none);
+        }
+        &__title{
+            @include font ($font_main, 20px, 700, 24px, inherit, none);
+            margin-bottom: 20px;
+        }
+        &__price-list{
+            @include font ($font_main, 20px, 700, 24px, $color_titles, none);
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        &__text{
+            @include font ($font_menu, 16px, 500, 20px, inherit, none);
+            margin: 0 0 20px 24px;
+            position: relative;
+            &::before{
+                @include pseudo-element ("", block, 4px, 75px, absolute, 2px, -22px);
+                background-color: $color_titles;
+            }
+            p{
+                @include hideText (4);
+            }
         }
     }
 }
